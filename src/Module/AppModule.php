@@ -4,6 +4,7 @@ namespace Polidog\Todo\Module;
 use BEAR\Package\AbstractAppModule;
 use BEAR\Package\PackageModule;
 use josegonzalez\Dotenv\Loader;
+use Ray\AuraSqlModule\AuraSqlModule;
 
 class AppModule extends AbstractAppModule
 {
