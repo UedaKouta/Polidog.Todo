@@ -1,0 +1,15 @@
+{% extends 'layout/base.html.twig' %}
+{% block content %}
+    <h1 class="page-header">タスク</h1>
+    <div class="row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">新規作成</div>
+                <div class="panel-body">
+                    {{ todo_form|raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
