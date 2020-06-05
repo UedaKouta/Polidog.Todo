@@ -34,6 +34,6 @@
     http://bearsunday.github.io/manuals/1.0/ja/tutorial.html
 
 ### サーバー立ち上げ
-    php -S 127.0.0.1:8080 public/index.php
+    php -S localhost:8080 public/index.php
 
     http://127.0.0.1:8080/

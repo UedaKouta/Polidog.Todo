@@ -31,6 +31,7 @@ class AppModule extends AbstractAppModule
 
         // Form
         $this->install(new AuraInputModule());
+
         $this->bind(TodoForm::class);
         $this->bind(FormInterface::class)->annotatedWith('todo_form')->to(TodoForm::class);
 
