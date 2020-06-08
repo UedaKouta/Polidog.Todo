@@ -77,7 +77,8 @@ public function createTodo($title)
     $this->code = $request->code;
     $this->headers['location'] = "/";
     $this['todo_form'] = $this->todoForm;
-    return $this;
+    // return $this;
+    return $this->onGet();
 }
 
 }
