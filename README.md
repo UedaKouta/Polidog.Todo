@@ -23,9 +23,9 @@
 ## 開発コメント
 
 ### いろいろ
-　　参考
-　　htmlアプリケーションは公式を参考に作成。
-　　template置き場
+　参考
+  htmlアプリケーションは公式を参考に作成。
+  template置き場
 
 　　var/templates/layout/base.html.twig
 　　var/templates/Page/Index.html.twig
