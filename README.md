@@ -37,3 +37,7 @@
     php -S localhost:8080 public/index.php
 
     http://127.0.0.1:8080/
+
+
+    ## Min
+    ![min](https://user-images.githubusercontent.com/27049632/84008848-5b096480-a9ad-11ea-91c3-27e686e9213f.png)
