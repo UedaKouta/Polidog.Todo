@@ -30,14 +30,14 @@ public function __construct(FormInterface $todoForm)
     $this->todoForm = $todoForm;
 }
 
-public function onGet()
+public function onGet(string $status = null)
 {
     $this['todo_form'] = $this->todoForm;
 
     $this['todos'] = $this->resource
         ->get
         ->uri('app://self/todos')
-        ->withQuery(['status' => $status])
+       ->withQuery(['status' => $status])
         ->eager
         ->request();
 
