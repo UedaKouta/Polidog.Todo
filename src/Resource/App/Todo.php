@@ -16,7 +16,6 @@ class Todo extends ResourceObject
     public function onGet($id)
     {
         $todo = $this->pdo->fetchOne("SELECT * FROM todo WHERE id = :id", ['id' => $id]);
-        error_log("[". date('Y-m-d H:i:s') . dirname(__DIR__). " src/Form/Todo.php\n" , 3, "/Applications/MAMP/htdocs/Polidog.Todo/log/debug.log");
 
 
         if (empty($todo)) {

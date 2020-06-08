@@ -28,7 +28,6 @@ public $todoForm;
 public function __construct(FormInterface $todoForm)
 {
     $this->todoForm = $todoForm;
-    error_log("[". date('Y-m-d H:i:s') . dirname(__DIR__). " src/page/index.php\n" , 3, "/Applications/MAMP/htdocs/Polidog.Todo/log/debug.log");
 
 }
 
