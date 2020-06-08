@@ -20,6 +20,10 @@ class AppModule extends AbstractAppModule
      */
     protected function configure() : void
     {
+
+      error_log("[". date('Y-m-d H:i:s') . dirname(__DIR__). " src/Form/AppModule.php\n" , 3, "/Applications/MAMP/htdocs/Polidog.Todo/log/debug.log");
+
+
         $env = dirname(__DIR__) . '/.env';
         if (file_exists($env)) {
             (new Loader($env))->parse()->putenv(true);

@@ -13,11 +13,15 @@ use Ray\WebFormModule\AbstractForm;
 
 class TodoForm extends AbstractForm
 {
+
     /**
      * {@inheritdoc}
      */
     public function init()
     {
+
+      error_log("[". date('Y-m-d H:i:s') . dirname(__DIR__). " src/Form/Todoform.php\n" , 3, "/Applications/MAMP/htdocs/Polidog.Todo/log/debug.log");
+
         $this->setField('title')
             ->setAttribs([
                 'id' => 'todo[title]',

@@ -12,9 +12,12 @@ class Todo extends ResourceObject
     const INCOMPLETE = 1;
     const COMPLETE = 2;
 
+
     public function onGet($id)
     {
         $todo = $this->pdo->fetchOne("SELECT * FROM todo WHERE id = :id", ['id' => $id]);
+        error_log("[". date('Y-m-d H:i:s') . dirname(__DIR__). " src/Form/Todo.php\n" , 3, "/Applications/MAMP/htdocs/Polidog.Todo/log/debug.log");
+
 
         if (empty($todo)) {
             $this->code = 404;
@@ -63,6 +66,7 @@ class Todo extends ResourceObject
         $sql = "DELETE FROM todo WHERE id = :id";
         $statement = $this->pdo->prepare($sql);
         $statement->execute(['id' => $id]);
-
+        $this->code = 202;
+        $this->headers['location'] = '/todo/?id=' . $id;
     }
 }
