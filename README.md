@@ -20,7 +20,7 @@
 
 ### メモ
     htmlアプリケーションは公式を参考に作成。
-    template置き場、公式を参考に変更
+
     delete機能は追加
 
     var/templates/layout/base.html.twig
